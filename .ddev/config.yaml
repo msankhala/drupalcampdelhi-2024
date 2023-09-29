@@ -1,4 +1,4 @@
-name: drupal-contrib-starterkit
+name: dcampdelhi-2023
 type: drupal9
 docroot: docroot
 php_version: "8.1"
