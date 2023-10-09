@@ -11,6 +11,7 @@ dependencies:
     - taxonomy.vocabulary.session_category
     - workflows.workflow.session_acceptance
   module:
+    - addtocal
     - content_moderation
     - node
     - smart_date
@@ -539,7 +540,10 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        views_flag_refresh:
+          flags: {  }
+          noscrolltop: 0
       displays:
         page_1: page_1
       inherit_arguments: false
@@ -560,73 +564,6 @@ display:
     position: 1
     display_options:
       fields:
-        field_when:
-          id: field_when
-          table: taxonomy_term__field_when
-          field: field_when
-          relationship: field_time_slot
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: smartdate_default
-          settings:
-            timezone_override: ''
-            format: time_only
-            force_chronological: false
-            add_classes: false
-            time_wrapper: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         rendered_entity:
           id: rendered_entity
           table: node
@@ -678,6 +615,74 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: teaser
+        field_when:
+          id: field_when
+          table: taxonomy_term__field_when
+          field: field_when
+          relationship: field_time_slot
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: c-add-to-cal
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: div
+          element_wrapper_class: c-add-to-cal
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: addtocal_view
+          settings:
+            timezone_override: ''
+            date_format: 'd-m-Y h:i:s A'
+            event_title: ''
+            location: ''
+            description: ''
+            past_events: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       arguments:
         field_when_value:
           id: field_when_value
