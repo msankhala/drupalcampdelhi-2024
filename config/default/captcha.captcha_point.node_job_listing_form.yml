@@ -1,0 +1,7 @@
+uuid: 6b926b03-f1e7-4caa-97a2-d66e899a38db
+langcode: en
+status: false
+dependencies: {  }
+formId: node_job_listing_form
+captchaType: default
+label: node_job_listing_form

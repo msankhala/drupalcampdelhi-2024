@@ -1,0 +1,23 @@
+uuid: fb07425d-f03b-466a-8192-4b19a75e9a81
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - xara
+_core:
+  default_config_hash: LdX5tf89tQFJgJbrs12LJEvEVwcecs6Lx9C2i2YYvdU
+id: xara_search
+theme: xara
+region: search_box
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

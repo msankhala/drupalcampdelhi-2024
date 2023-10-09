@@ -1,0 +1,22 @@
+uuid: 8f9d0507-026b-4b03-bbf9-38eddcbcd10a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xara
+_core:
+  default_config_hash: cXizNnI8OPa3DbDEBmMQzNKExQ2ZbdTnpyQH0UjeUvE
+id: xara_content
+theme: xara
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
