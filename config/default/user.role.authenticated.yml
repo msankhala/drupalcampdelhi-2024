@@ -9,6 +9,7 @@ dependencies:
     - contact
     - field_permissions
     - filter
+    - flag
     - search
     - shortcut
     - system
@@ -24,9 +25,11 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'flag my_schedule'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'unflag my_schedule'
   - 'use text format basic_html'
   - 'view field_r'
   - 'view field_time_slot'

@@ -25,6 +25,7 @@ module:
   editor: 0
   event_platform: 0
   event_platform_details: 0
+  event_platform_flag: 0
   event_platform_job_listings: 0
   event_platform_scheduler: 0
   event_platform_sessions: 0
@@ -36,6 +37,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  flag: 0
   help: 0
   history: 0
   honeypot: 0
@@ -64,6 +66,7 @@ module:
   toolbar: 0
   tour: 0
   user: 0
+  views_flag_refresh: 0
   views_summary_tabs: 0
   views_ui: 0
   webform: 0
