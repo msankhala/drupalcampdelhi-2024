@@ -53,6 +53,7 @@ module:
   recaptcha: 0
   registration_role: 0
   search: 0
+  sharethis: 0
   shortcut: 0
   smart_date: 0
   standard: 0

@@ -26,6 +26,7 @@
         "drupal/event_platform": "^1.0",
         "drupal/flag": "^4.0@beta",
         "drupal/recaptcha": "^3.2",
+        "drupal/sharethis": "^3.0",
         "drupal/thex": "^10.0",
         "drupal/views_flag_refresh": "^1.0",
         "drupal/webform": "^6.1"
