@@ -21,6 +21,7 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  dcd: 0
   dynamic_page_cache: 0
   editor: 0
   event_platform: 0
