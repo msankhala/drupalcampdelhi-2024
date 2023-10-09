@@ -14,10 +14,12 @@ use Drupal\node\NodeInterface;
  */
 function dcd_node_access(NodeInterface $node, $op, AccountInterface $account) {
   $roles = $account->getRoles();
+  $allowd_op = ['update'];
   if ($node->getType() == 'session'
   && in_array('speaker', $roles)
   && $node->get('moderation_state')->value == 'proposed'
-  && $node->getOwnerId() == $account->id()) {
+  && $node->getOwnerId() == $account->id()
+  && in_array($op, $allowd_op)) {
     return AccessResult::allowed();
   }
   return AccessResult::neutral();
