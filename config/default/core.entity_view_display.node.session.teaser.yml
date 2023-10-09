@@ -68,6 +68,16 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  flag_my_schedule:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   field_description: true
   field_is_non_session: true
