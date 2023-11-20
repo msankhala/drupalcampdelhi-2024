@@ -1,8 +1,12 @@
 global-styling:
   version: VERSION
   css:
+    base:
+      https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap: {}
     theme:
       css/style.css: {}
+      css/site-header.css: {}
+      css/site-footer.css: {}
   js:
     js/xara.js: {}
   dependencies:
