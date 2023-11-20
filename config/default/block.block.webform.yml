@@ -1,0 +1,30 @@
+uuid: 624442dd-aa0a-4d5f-97af-93732e75777a
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.become_a_volunteer
+  module:
+    - system
+    - webform
+  theme:
+    - xara
+id: webform
+theme: xara
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Become a volunteer'
+  label_display: visible
+  provider: webform
+  webform_id: become_a_volunteer
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: edac08c8-9f03-4e5d-93ef-9e517d45336d
+langcode: en
+status: true
+dependencies:
+  module:
+    - event_platform_details
+    - system
+  theme:
+    - xara
+id: eventplatformhomepagehero
+theme: xara
+region: highlighted
+weight: 0
+provider: null
+plugin: event_platform_home_hero
+settings:
+  id: event_platform_home_hero
+  label: 'Event Platform Homepage Hero'
+  label_display: '0'
+  provider: event_platform_details
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

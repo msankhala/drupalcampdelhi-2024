@@ -1,0 +1,25 @@
+uuid: bc2abd23-809c-439d-9123-c9171fff4840
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a1ca5dfa-d43c-42f4-ad0a-d524686a21fd'
+  module:
+    - block_content
+  theme:
+    - xara
+id: emptyblock
+theme: xara
+region: header_top_left
+weight: 0
+provider: null
+plugin: 'block_content:a1ca5dfa-d43c-42f4-ad0a-d524686a21fd'
+settings:
+  id: 'block_content:a1ca5dfa-d43c-42f4-ad0a-d524686a21fd'
+  label: 'Empty Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

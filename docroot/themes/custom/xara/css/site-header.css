@@ -1,0 +1,155 @@
+.header {
+  padding: 0;
+}
+
+.header-top {
+	display: none;
+}
+
+.header .header-main {
+	background-color: transparent;
+	padding: 0;
+}
+
+.header-container {
+	height: 82px;
+}
+
+.header-top a {
+  color: var(--color-text);
+  border-bottom: 1px dashed var(--primary);
+}
+
+.header-top a:hover,
+.header-top i {
+  color: var(--primary);
+}
+
+.header-main {
+  background-color: var(--border);
+  padding: 1rem 0;
+}
+
+.site-branding {
+	z-index: 100;
+	margin-top: 50%;
+	position: relative;
+}
+
+.active-menu .menu-wrap {
+	z-index: 200;
+}
+
+.region-primary-menu {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.menu-wrap {
+	background-color: var(--color-dark-blue);
+}
+
+.close-mobile-menu {
+	border: 2px solid var(--color-white);
+}
+
+.menu-wrap .menu a {
+	display: block;
+	color: var(--color-white);
+	padding: 0.5rem 0;
+	border-bottom: 1px solid var(--color-white);
+}
+
+.mobile-menu span {
+	background-color: var(--primary);
+} 
+
+.page-header {
+  background-color: var(--color-dark-blue);
+  padding: 5rem 0 11rem 0; 
+  overflow: hidden;
+}
+
+.page-header::before {
+	position: absolute;
+	background: url(/themes/custom/xara/images/demo/page-header-bottom.png);
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.page-title-wrap .page-title {
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	color: var(--color-white);
+}
+
+.breadcrumb-item {
+	color: var(--color-grey-300);
+}
+
+@media (min-width: 768px) {
+  /* html {
+    font-size: 18px;
+  } */
+  /* Header */
+	.region-primary-menu  {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.menu-wrap .menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu-wrap .menu a {
+		color: var(--color-black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    padding: 0;
+		border-bottom: none;
+  }
+  .menu-wrap .collapsed:hover,
+  .menu-wrap .expanded:hover,
+  .menu-wrap .menu-item-has-children:hover {
+    background-color: transparent;
+  }
+  .page-header {
+    /* padding: 4rem 0 10rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%); */
+  }
+  .page-header::before {
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%); */
+  }
+  /* Footer */
+  /* .site-footer {
+    padding-top: 10rem;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .site-footer::before {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  } */
+
+	.menu-wrap {
+		background-color: transparent;
+	}
+}
